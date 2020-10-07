@@ -1,0 +1,3 @@
+#use below command to install spinnaker:
+./helm install -n default cd stable/spinnaker -f spinnaker-config.yaml \
+--version 2.1.0-rc.1  --timeout 10m0s --wait
