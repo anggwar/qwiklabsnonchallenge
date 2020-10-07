@@ -1,3 +1,15 @@
 #use below command to install spinnaker:
 ./helm install -n default cd stable/spinnaker -f spinnaker-config.yaml \
 --version 2.1.0-rc.1  --timeout 10m0s --wait
+
+#if you got error during spinnaker pipeline deployment,
+#Exception ( Monitor Deploy )
+#Deploy failed: error: unable to recognize "STDIN": no matches for kind "Deployment" in version "extensions/v1beta1"
+
+#go to cloud console, storage, find <project_id>-kubernetes-manifests bucket
+#go to deployment folder, delete 4 files inside
+#copy 4 yaml file in this folder:
+#sample-backend-canary.yaml
+#sample-backend-production.yaml
+#sample-frontend-canary.yaml
+#sample-frontend-production.yaml
