@@ -8,7 +8,7 @@
 
 #go to cloud console, storage, find <project_id>-kubernetes-manifests bucket
 #go to deployment folder, delete 4 files inside
-#copy 4 yaml file in this folder:
+#edit the image to your project id, copy 4 yaml file in this folder:
 #sample-backend-canary.yaml
 #sample-backend-production.yaml
 #sample-frontend-canary.yaml
